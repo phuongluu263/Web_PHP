@@ -1,0 +1,101 @@
+<div id = "Main">
+	<div class="row">
+
+			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+				<div class = "Maincontent">
+					<?php
+					if(isset($_GET['quanly']))
+					{
+						$tam=$_GET['quanly'];
+					}
+					else
+					{
+						$tam='';	
+					}	
+					if ($tam=='danhmucsanpham')
+					{
+						include("Main/danhmuc.php");
+					}
+					elseif($tam=='giohang')
+					{
+						include("Main/giohang.php");
+					}
+					elseif($tam=='danhmucbaiviet')
+					{
+						include("Main/danhmucbaiviet.php");
+					}
+					elseif($tam=='baiviet')
+					{
+						include("Main/baiviet.php");
+					}
+					elseif($tam=='dangky')
+					{
+						include("Main/dangky.php");
+					}	
+					elseif($tam=='thaydoimatkhau')
+					{
+						include("Main/thaydoimatkhau.php");
+					}
+					elseif($tam=='dangnhap')
+					{
+						include("Main/dangnhap.php");
+					}
+					elseif($tam=='thanhtoan')
+					{
+						include("Main/thanhtoan.php");
+					}
+					elseif($tam=='tintuc')
+					{
+						include("Main/tintuc.php");
+					}
+					elseif($tam=='camon')
+					{
+						include("Main/camon.php");
+					}
+					elseif($tam=='camon1')
+					{
+						include("Main/camon1.php");
+					}
+					
+					elseif($tam=='vanchuyen')
+					{
+						include("Main/vanchuyen.php");
+					}
+					elseif($tam=='thongtinthanhtoan')
+					{
+						include("Main/thongtinthanhtoan.php");
+					}
+					elseif($tam=='donhangdadat')
+					{
+						include("Main/donhangdadat.php");
+					}
+					elseif($tam=='lichsudonhang')
+					{
+						include("Main/lichsudonhang.php");
+					}
+					elseif($tam=='xemdonhang')
+					{
+						include("Main/xemdonhang.php");
+					}
+
+					elseif($tam=='timkiem')
+					{
+						include("Main/timkiem.php");
+					}
+					elseif($tam=='lienhe')
+					{
+						include("Main/lienhe.php");
+					}
+					elseif($tam=='danhsachsp')
+					{
+						include("Main/danhsachsp.php");
+					}
+					else
+					{
+						include("Main/maincontent.php");
+					}	
+					?>
+				</div>
+			</div>	
+	</div>		
+</div>
